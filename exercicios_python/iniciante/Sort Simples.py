@@ -29,11 +29,9 @@ Exemplo de Entrada	Exemplo de Saída
 7
 '''
 
-numeros = input()
-numeros_mesmalinha = [int(n) for n in numeros.split()]
-numeros_antes = numeros_mesmalinha[:]
-numeros_mesmalinha.sort()
-n1, n2, n3 = numeros_mesmalinha
+n1, n2, n3 = map(int, input().split())
+numeros_antes = n1, n2, n3
+ordenados = sorted(numeros_antes)
 
-print(f"{n1}\n{n2}\n{n3}\n")
+print(f"{ordenados[0]}\n{ordenados[1]}\n{ordenados[2]}\n")
 print(f"{numeros_antes[0]}\n{numeros_antes[1]}\n{numeros_antes[2]}")

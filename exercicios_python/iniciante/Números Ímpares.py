@@ -17,6 +17,7 @@ Exemplo de Entrada	Exemplo de Saída
 '''
 
 numero = int(input())
+
 for impares in range(1, numero, 2):
     print(impares)
 

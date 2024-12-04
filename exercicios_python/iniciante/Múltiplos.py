@@ -17,10 +17,7 @@ Sao Multiplos
 Nao sao Multiplos
 '''
 
-valores = input()
-valores_separados = [int(v) for v in valores.split()]
-numero1 = valores_separados[0]
-numero2 = valores_separados[1]
+numero1, numero2 = map(int, input().split())
 
 if numero1 % numero2 == 0 or numero2 % numero1 == 0:
     print("Sao Multiplos")

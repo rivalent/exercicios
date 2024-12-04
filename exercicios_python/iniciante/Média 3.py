@@ -30,14 +30,9 @@ Media: 7.3
 Aluno aprovado.
 '''
 
-notas = input()
-separa_notas = [float(n) for n in notas.split()]
-nota1 = separa_notas[0] * 2
-nota2 = separa_notas[1] * 3
-nota3 = separa_notas[2] * 4
-nota4 = separa_notas[3] * 1
+nota1, nota2, nota3, nota4 = map(float, input().split())
 
-media_final = (nota1 + nota2 + nota3 + nota4) / 10
+media_final = (nota1 * 2 + nota2 * 3 + nota3 * 4 + nota4 * 1) / 10
 
 print(f"Media: {media_final:.1f}")
 if media_final >= 7.0:

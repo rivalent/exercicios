@@ -27,10 +27,7 @@ Q1
 Origem
 '''
 
-cordenadas = input()
-cordenadas_separadas = [float(n) for n in cordenadas.split()]
-x = cordenadas_separadas[0]
-y = cordenadas_separadas[1]
+x, y = map(float, input().split())
 
 if x == 0 and y == 0:
     print("Origem")

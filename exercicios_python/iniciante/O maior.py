@@ -21,10 +21,9 @@ Exemplos de Entrada	Exemplos de Saída
 217 eh o maior
 '''
 
-numeros = input()
-separa = [int(n) for n in numeros.split()]
+valor1, valor2, valor3 = map(int, input().split())
 
-maior = (separa[0] + separa[1] + abs(separa[0] - separa[1])) / 2
-maior_abs = (maior + separa[2] + abs(separa[2] - maior)) / 2
+maior = (valor1 + valor2 + abs(valor1 - valor2)) / 2
+maior_abs = (maior + valor3 + abs(valor3 - maior)) / 2
 
 print(f"{maior_abs:.0f} eh o maior")

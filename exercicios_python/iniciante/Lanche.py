@@ -31,12 +31,8 @@ precos = {
     5: 1.50
 }
 
-codigo_quantidade = input()
-separa_numero = [int(n) for n in codigo_quantidade.split()]
-codigo = separa_numero[0]
-quantidade = separa_numero[1]
+codigo, quantidade = map(int, input().split())
 
-preco = precos[codigo]
-total = preco * quantidade
+total = precos[codigo] * quantidade
 
 print(f"Total: R$ {total:.2f}")

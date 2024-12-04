@@ -17,12 +17,7 @@ Valores nao aceitos
 Valores aceitos
 '''
 
-numeros = input()
-separa_numeros = [int(n) for n in numeros.split()]
-a = separa_numeros[0]
-b = separa_numeros[1]
-c = separa_numeros[2]
-d = separa_numeros[3]
+a, b, c, d = map(int, input().split())
 
 if b > c and d > a and c + d > a + b and c > 0 and d > 0 and a % 2 == 0:
     print("Valores aceitos")

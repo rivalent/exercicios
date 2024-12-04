@@ -25,18 +25,11 @@ Exemplo de Entrada	Exemplo de Saída
 
 16.4575
 '''
+
 from math import sqrt
 
-linha1 = input()
-linha2 = input()
-
-separa_linha1 = [float(n) for n in linha1.split()]
-separa_linha2 = [float(n) for n in linha2.split()]
-
-x1 = separa_linha1[0]
-y1 = separa_linha1[1]
-x2 = separa_linha2[0]
-y2 = separa_linha2[1]
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
 
 distancia = sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 

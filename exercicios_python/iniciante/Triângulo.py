@@ -26,11 +26,7 @@ Area = 10.0
 Perimetro = 12.1
 '''
 
-valores = input()
-valores_separados = [float(v) for v in valores.split()]
-r1 = valores_separados[0]
-r2 = valores_separados[1]
-r3 = valores_separados[2]
+r1, r2, r3 = map(float, input().split())
 
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
     calculo_perimetro = r1 + r2 + r3

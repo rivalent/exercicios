@@ -30,15 +30,14 @@ QUADRADO: 108.160
 RETANGULO: 132.080
 '''
 
-numero = input()
+a, b, c = map(float, input().split())
 pi = 3.14159
-separa = [float(n) for n in numero.split()]
 
-triangulo = (separa[0] * separa[2]) / 2
-circulo = pi * separa[2] ** 2
-trapezio = ((separa[0] + separa[1]) * separa[2]) / 2
-quadrado = separa[1] ** 2
-retangulo = separa[0] * separa[1]
+triangulo = (a * c) / 2
+circulo = pi * c ** 2
+trapezio = ((a + b) * c) / 2
+quadrado = b ** 2
+retangulo = a * b
 
 print(f"TRIANGULO: {triangulo:.3f}")
 print(f"CIRCULO: {circulo:.3f}")

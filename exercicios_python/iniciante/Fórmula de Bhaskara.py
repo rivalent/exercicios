@@ -29,11 +29,7 @@ Impossivel calcular
 
 from math import sqrt
 
-numeros = input()
-separa_numeros = [float(n) for n in numeros.split()]
-a = separa_numeros[0]
-b = separa_numeros[1]
-c = separa_numeros[2]
+a, b, c = map(float, input().split())
 
 delta = b ** 2 - 4 * a * c
 
