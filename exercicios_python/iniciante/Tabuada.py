@@ -24,6 +24,7 @@ Exemplo de Entrada	Exemplo de Saída
 '''
 
 numero = int(input())
+
 for tabuada in range(1, 11):
     multiplicador = numero * tabuada
     print(f"{tabuada} x {numero} = {multiplicador}")

@@ -24,8 +24,15 @@ Exemplo de Entrada	Exemplo de Saída
 0
 '''
 
-numero1 = int(input())
-numero2 = int(input())
+x = int(input())
+y = int(input())
 
-for i in range(1, ):
+inicio = min(x, y) + 1
+fim = max(x, y)
+soma_impares = 0
 
+for numero in range(inicio, fim):
+    if numero % 2 != 0:
+        soma_impares += numero
+
+print(soma_impares)
